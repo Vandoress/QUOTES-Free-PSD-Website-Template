@@ -1,0 +1,186 @@
+.slider-main-screen{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	&__bg{}
+	/* Slider */ /* Слайдер */ 
+	.slick-slider{
+		/* Launching the slider */ /* Запуск слайдера */
+		&.slick-initialized{}
+		/* Slider with dots */ /* Слайдер с точками */
+		&.slick-dotted{}
+	}
+	/* Bounding wrapper */ /* Ограничивающая оболочка */
+	.slick-list {
+		overflow: hidden;
+	}
+	/* Slides tape */ /* Лента слайдов */
+	.slick-track{
+		display: flex;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	/* Slide */ /* Слайд */
+	.slick-slide{
+		/* Active slide (shown) */ /* Слайд активный (показывается) */
+		&.slick-active{}
+		/* Current slide */ /* Текущий слайд  */
+		&.slick-current{}
+		/* Center slide */ /* Слайд по центру */
+		&.slick-center{}
+		/* Cloned slide */ /* Клонированный слайд */
+		&.slick-cloned{}
+	}
+	/* Arrow */ /* Стрелка */
+	.slick-arrow{
+		/* Left Arrow */ /* Стрелка влево */
+		&.slick-prev{}
+		/* Right Arrow */ /* Стрелка вправо */
+		&.slick-next{}
+		&.slick-disabled{}
+	}
+	/* Dots (bulits) */ /* Точки (булиты) */
+	.slick-dots{
+		position: absolute;
+		bottom: 114px;
+		left: 50%;
+		transform:translate(-50%,0);
+		z-index: 5;
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		li{
+			list-style: none;
+			margin: 0 24px 0 0;
+			&:last-child{margin: 0;}
+			/* Active dot */ /* Активная точка */
+			&.slick-active{
+				button{
+					background-color: #ffffff;
+				}
+			}
+			/* Dot element */ /* Элемент точки */
+			& button{
+				font-size: 0;
+				width: 16px;
+				height: 16px;
+				background-color: #000000;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+.slider-love{
+	/* Slider */ /* Слайдер */ 
+	.slick-slider{
+		/* Launching the slider */ /* Запуск слайдера */
+		&.slick-initialized{}
+		/* Slider with dots */ /* Слайдер с точками */
+		&.slick-dotted{}
+	}
+	/* Bounding wrapper */ /* Ограничивающая оболочка */
+	.slick-list {
+		overflow: hidden;
+	}
+	/* Slides tape */ /* Лента слайдов */
+	.slick-track{
+		display: flex;
+	}
+	/* Slide */ /* Слайд */
+	.slick-slide{
+		@media (max-width: 1599.98px){
+			div:nth-child(1){
+				background-color: #ffddd5;
+				padding: 100px 50px 130px 120px;
+				div{padding: 0;}
+			}
+			div:nth-child(2){}
+		}
+		@media (max-width: 1200px){
+			div:nth-child(1){
+				padding: 100px 50px 100px 100px;
+				@media (max-width: 767.98px){
+					padding: 60px 50px 100px 50px;
+				}
+				@media (max-width: 575.98px){
+					padding: 60px 10px 100px 10px;
+				}
+			}
+			div:nth-child(2){
+				position: relative;
+				padding: 0 0 62.985% 0;
+				img{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					object-fit: cover;
+				}
+				@media (max-width: 1200px){
+					padding: 0 0 54.76% 0;
+				}
+				@media (max-width: 767.98px){
+					padding: 0 0 80% 0;
+				}
+				@media (max-width: 575.98px){
+					padding: 0 0 100% 0;
+				}
+			}
+		}
+		/* Active slide (shown) */ /* Слайд активный (показывается) */
+		&.slick-active{}
+		/* Current slide */ /* Текущий слайд  */
+		&.slick-current{}
+		/* Center slide */ /* Слайд по центру */
+		&.slick-center{}
+		/* Cloned slide */ /* Клонированный слайд */
+		&.slick-cloned{}
+	}
+	/* Arrow */ /* Стрелка */
+	.slick-arrow{
+		/* Left Arrow */ /* Стрелка влево */
+		&.slick-prev{}
+		/* Right Arrow */ /* Стрелка вправо */
+		&.slick-next{}
+		&.slick-disabled{}
+	}
+	/* Dots (bulits) */ /* Точки (булиты) */
+	.slick-dots{
+		display: flex;
+		position: absolute;
+		bottom: -60px;
+		@media (max-width: 1200px){
+			left: 50%;
+			margin: 0 0 0 -35px;
+		}
+		@media (max-width: 767.98px){
+			bottom: -50px;
+		}
+		li{
+			list-style: none;
+			margin: 0 10px 0 0;
+			&:last-child{margin: 0;}
+			/* Active dot */ /* Активная точка */
+			&.slick-active{
+				button{
+					background-color: #626262;
+				}
+			}
+			/* Dot element */ /* Элемент точки */
+			& button{
+				font-size: 0;
+				width: 10px;
+				height: 10px;
+				background-color: rgba(214,70,7,0.0);
+				border: 1px solid #626262;
+				border-radius: 50%;
+			}
+		}
+	}
+}
